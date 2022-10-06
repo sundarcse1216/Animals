@@ -1,8 +1,6 @@
 package com.stl;
 
-import com.stl.animal.Bird;
-import com.stl.animal.Chicken;
-import com.stl.animal.Duck;
+import com.stl.animal.*;
 import com.stl.fish.Fish;
 
 /**
@@ -30,6 +28,48 @@ public class Solution {
         chicken.sing();
         chicken.walk();
 //        chicken.fly();
+
+        System.out.println("\nRooster");
+        Rooster rooster = new Rooster(chicken);
+        rooster.sing();
+        rooster.walk();
+//        rooster.fly();
+
+        System.out.println("\nDog");
+        Dog dog = new Dog();
+        dog.sing();
+        dog.walk();
+
+        System.out.println("\nCat");
+        Cat cat = new Cat();
+        cat.sing();
+        cat.walk();
+
+        System.out.println("\ndogParrot");
+        Parrot dogParrot = new Parrot(dog);
+        dogParrot.sing();
+        dogParrot.walk();
+        dogParrot.fly();
+
+        System.out.println("\ncatParrot");
+        Parrot catParrot = new Parrot(cat);
+        catParrot.sing();
+        catParrot.walk();
+        catParrot.fly();
+
+        System.out.println("\nroosterParrot");
+        Parrot roosterParrot = new Parrot(rooster);
+        roosterParrot.sing();
+        roosterParrot.walk();
+        roosterParrot.fly();
+
+        System.out.println("\nduckParrot");
+        Parrot duckParrot = new Parrot(duck);
+        duckParrot.sing();
+        duckParrot.walk();
+        duckParrot.fly();
+
+
     }
 
 }
