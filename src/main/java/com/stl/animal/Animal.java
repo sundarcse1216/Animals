@@ -6,7 +6,7 @@ package com.stl.animal;
  */
 public class Animal {
 
-    public void walk() {
+    void walk() {
         System.out.println("I am walking");
     }
 }

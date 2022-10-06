@@ -14,4 +14,9 @@ public class Bird extends Animal {
         System.out.println("I'm Singing");
     }
 
+    @Override
+    public void walk() {
+        super.walk();
+    }
+
 }
