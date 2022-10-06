@@ -1,7 +1,9 @@
 package com.stl;
 
 import com.stl.animal.*;
+import com.stl.fish.Clown;
 import com.stl.fish.Fish;
+import com.stl.fish.Shark;
 
 /**
  * @author sundar
@@ -69,6 +71,22 @@ public class Solution {
         duckParrot.walk();
         duckParrot.fly();
 
+        System.out.println("\nFish");
+        Fish fish = new Fish();
+        fish.swim();
+//        fish.walk();
+
+        System.out.println("\nShark");
+        Shark shark = new Shark();
+        shark.swim();
+        shark.color();
+        shark.identity();
+
+        System.out.println("\nClown");
+        Clown clown = new Clown();
+        clown.swim();
+        clown.color();
+        clown.identity();
 
     }
 
