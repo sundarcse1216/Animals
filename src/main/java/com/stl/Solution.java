@@ -94,6 +94,14 @@ public class Solution {
         dolphin.walk();
         dolphin.swim();
 
+        System.out.println("\nButterfly");
+        Butterfly butterfly = new ButterflyImpl();
+        butterfly.fly();
+
+        System.out.println("\nCaterpillar");
+        Caterpillar caterpillar = new ButterflyImpl();
+        caterpillar.walk();
+
     }
 
 }
