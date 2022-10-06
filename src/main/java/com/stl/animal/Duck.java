@@ -1,5 +1,6 @@
 package com.stl.animal;
 
+import com.stl.Counter;
 import com.stl.fish.Fish;
 
 /**
@@ -16,6 +17,7 @@ public class Duck extends Bird implements Sound {
 
     @Override
     public void sing() {
+        Counter.increaseSingByOne();
         System.out.println("Quack, quack");
     }
 

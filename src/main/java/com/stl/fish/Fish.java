@@ -1,5 +1,6 @@
 package com.stl.fish;
 
+import com.stl.Counter;
 import com.stl.animal.Animal;
 
 /**
@@ -9,6 +10,7 @@ import com.stl.animal.Animal;
 public class Fish extends Animal {
 
     public void swim() {
+        Counter.increaseSwimByOne();
         System.out.println("I can Swim");
     }
 

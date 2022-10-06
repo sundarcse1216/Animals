@@ -101,6 +101,27 @@ public class Solution {
         Caterpillar caterpillar = new ButterflyImpl();
         caterpillar.walk();
 
+        Animal[] animals = new Animal[]{
+                bird,
+                duck,
+                chicken,
+                rooster,
+                dogParrot,
+                catParrot,
+                roosterParrot,
+                duckParrot,
+                shark,
+                clown,
+                dolphin,
+                (Animal) butterfly,
+                (Animal) caterpillar
+        };
+
+        System.out.println("\nNo.of Animal can fly: " + Counter.getFly());
+        System.out.println("No.of Animal can walk: " + Counter.getWalk());
+        System.out.println("No.of Animal can sing: " + Counter.getSing());
+        System.out.println("No.of Animal can swim: " + Counter.getSwim());
+
     }
 
 }

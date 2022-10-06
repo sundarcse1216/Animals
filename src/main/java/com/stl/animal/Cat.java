@@ -1,5 +1,7 @@
 package com.stl.animal;
 
+import com.stl.Counter;
+
 /**
  * @author sundar
  * @since 06-10-2022
@@ -7,6 +9,7 @@ package com.stl.animal;
 public class Cat extends Animal implements Sound {
     @Override
     public void sing() {
+        Counter.increaseSingByOne();
         System.out.println("Me ow");
     }
 
