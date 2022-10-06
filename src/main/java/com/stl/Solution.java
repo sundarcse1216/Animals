@@ -2,6 +2,7 @@ package com.stl;
 
 import com.stl.animal.*;
 import com.stl.fish.Clown;
+import com.stl.fish.Dolphin;
 import com.stl.fish.Fish;
 import com.stl.fish.Shark;
 
@@ -87,6 +88,11 @@ public class Solution {
         clown.swim();
         clown.color();
         clown.identity();
+
+        System.out.println("\nDolphin");
+        Dolphin dolphin = new Dolphin(fish);
+        dolphin.walk();
+        dolphin.swim();
 
     }
 
